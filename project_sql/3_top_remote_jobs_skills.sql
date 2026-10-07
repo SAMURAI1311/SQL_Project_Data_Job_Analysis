@@ -1,6 +1,4 @@
-/*
-    Задача: Найти самые востребованные навыки для Аналитиков Данных с удаленной работой
-*/
+-- Задача: Найти самые востребованные навыки для Аналитиков Данных с удаленной работой
 
 WITH remote_job_skills AS (
     SELECT 
@@ -16,7 +14,6 @@ WITH remote_job_skills AS (
 )
 
 SELECT
-    remote_job_skills.skill_id,
     skills_dim.skills AS skill_name,
     skill_count
 FROM
